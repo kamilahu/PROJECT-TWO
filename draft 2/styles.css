@@ -1,0 +1,130 @@
+ * {
+    box-sizing: border-box;
+ } 
+
+body {
+    padding: 0;
+    margin: 0 20px 0 20px;
+    overflow-x: hidden;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    width: 10%;
+    padding: 2px;
+}
+
+.topnav input[type=text] {
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+    padding: 14px;
+    margin-top: 9px;
+    margin-left: 15px;
+    font-size: 17px;
+    border: none;
+    background-color: #ddd;
+    color: #3E3E3E;
+    font-weight: bold;
+}
+
+a.home {
+    float: right;
+    color: #3E3E3E;
+    background-color: #ddd;
+    text-decoration: none;
+    padding: 5px;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.topnav a.active {
+    background-color: #ddd;
+}
+
+.cards-container { 
+    /*margin: 2em auto;*/
+    display: flex;
+    /*width: 100vw;*/
+}
+
+.column {
+    flex: 1;
+    margin: 0 5px 0 5px;
+}
+
+.column a, img, div {
+    width: 100%;
+    margin: 5px 0 5px 0;
+}
+
+.cards {
+    border: 3px solid #000;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    transition: 2s;
+}
+
+.text-cards {
+    border: 3px solid #000;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.text {
+    text-decoration: none;
+    font-family: serif;
+    color: black;
+}
+
+.text-cards:hover {
+    background-color: pink;
+    transform: scale(1.05);
+    transition: all 2s;
+}
+
+@media (min-width: 926px) {
+
+    .topnav input[type=text] {
+        width: 75%; 
+        margin-top: 30px;
+    }
+
+    .logo {
+        width: 7%;
+        padding-left: 20px;
+        padding-top: 10px;
+        float: left;
+    }
+
+    .topnav a {
+        display: block;
+        color: #3E3E3E;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    .topnav a.hover {
+        background-color: #ddd;
+    }
+
+    a.home {
+        margin-top: 37px;
+    }
+
+    .text-cards {
+
+    }
